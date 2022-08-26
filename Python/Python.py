@@ -190,4 +190,102 @@ del x, y
 for i in range(len(thistuple)):
     print(thistuple[i])
     
-while
+while i < len(thistuple):
+    print(thistuple[i])
+    i = i + 1
+
+    # Multiplying Tuples
+fruittuple = ("apple", "banana", "cherry", "berry")
+ttuppllee = fruittuple * 2
+
+print(ttuppllee)
+
+    # Methods 
+print(ttuppllee.count("apple"))
+
+# Set
+thisIsSet = {"apple", "orange", "banana", "cherry"}
+print(thisIsSet)
+
+print(len(thisIsSet))
+print(type(thisIsSet))
+
+    # Set Constructor
+thisSet = set(("one", "two", "three", "four"))
+print(thisSet)
+
+    # Adding items to set
+thisSet.add("five")
+print(thisSet)
+
+thisSet.update(thisIsSet)
+print(thisSet)
+
+    # Removing items from Set
+thisSet.remove("apple")
+print(thisSet)
+
+thisSet.discard("two")
+print(thisSet)
+
+thisSet.pop()
+print(thisSet)
+
+    # Deleting or Clearing a Set
+thisSet.clear()
+print(thisSet)
+
+thisSet = {"one","two"}
+"""del thisSet"""
+
+print(thisSet)
+
+    # Loopig through Set
+
+print(thisIsSet)
+
+for x in thisIsSet:
+    print(x)
+
+    # Joining two sets
+set1 = {"a", "b", "c", "d"}
+set2 = {1, 2, 3, 4}
+
+set3 = set1.union(set2)
+print(set3)
+set4 = {"p" ,"q", "r", "s"}
+set4.update(set3)
+print(set4)
+
+    # intersection and others
+x = {"axe", "sword", "knife", "hammer"}
+y = {"axe", "archer", "bow", "knife"}
+z = x.intersection(y)
+
+x.intersection_update(y)
+
+print(x)
+print(z)
+
+q = {"box", "letter", "pen"}
+p = {"pen", "ballpen", "fountain pen"}
+r = q.symmetric_difference(p)
+q.symmetric_difference_update(p)
+
+print(q)
+print(r)
+
+# Dictionary
+thisDict = {
+    "brand": "apple",
+    "series": "iPhone",
+    "model": "12",
+    "year": 2020
+}
+print(thisDict)
+print(len(thisDict))
+print(type(thisDict))
+
+    # Accessing Dictionary Items
+x = thisDict["model"]
+print(x)
