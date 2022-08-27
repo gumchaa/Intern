@@ -289,3 +289,130 @@ print(type(thisDict))
     # Accessing Dictionary Items
 x = thisDict["model"]
 print(x)
+y = thisDict.get("year")
+print(y)
+print(thisDict.keys())
+print(thisDict.values())
+if "model" in thisDict:
+    print("yes, its present")
+
+    # Changing & Updating Dict
+thisDict["model"] = "13"
+thisDict.update({"year": 2021})
+print(thisDict)
+
+thisDict["color"] = "red"
+thisDict.update({"storage": "128gb"})
+print(thisDict)
+
+    # Removing Items from Dict
+thisDict.pop("storage")
+thisDict.popitem()
+del thisDict["model"]
+print(thisDict)
+
+    # Clearing and Deleting a dict
+thisDict.clear()
+print(thisDict)
+del thisDict
+
+    #Looping through Dict
+thisDict = {
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "edition": "Gt"
+}
+for x in thisDict:
+    print(x)
+
+for x in thisDict:
+    print(thisDict[x])
+
+for x in thisDict.values():
+    print(x)
+
+for x, y in thisDict.items():
+    print(x,": ", y)
+
+    # Dict Methods
+v_Dict = thisDict.copy()
+print(v_Dict)
+
+    # Nested Dict
+maleFriends = {
+    "friend1" : {
+        "name": "Joey",
+        "job": "Actor"
+    },
+    "friend2" : {
+        "name": "Chandler",
+        "job" : "transponster"
+    },
+    "friend3" : {
+        "name": "Ross",
+        "job" : "Paleontologist"
+    }
+}
+print(maleFriends)
+friend1 = {
+    "name": "Monica",
+    "job": "Chef"
+}
+friend2 = {
+    "name": "Rachel",
+    "job": "fashion"
+}
+friend3 = {
+    "name": "Pheobe",
+    "job": "masseuse"
+}
+
+femaleFriends = {
+    "friend1" : friend1,
+    "friend2" : friend2,
+    "friend3" : friend3
+}
+print(femaleFriends)
+
+# Conditions & if Statements
+
+a = 200
+b = 33
+
+if b > a:
+    print("b is greater than a")
+elif a == b :
+    print("a and b are equal")
+else:
+    print("a is grater than b")
+
+    # short hand method
+print("A") if a > b else print("B")
+print("A") if a > b else print("=") if a==b else print("B")
+
+    #Using Logical Operators
+a = 200
+b = 33
+c = 500
+
+print("Both condtions are True") if a>b and c>b else 0
+
+print("At least one of the condition is true") if a>b or a>c else 0
+
+    # Nested if 
+x = 41
+
+if x > 10:
+    print("Above ten,")
+    if x > 20:
+        print("and also above 20!")
+    else:
+        print("but not above 20.")
+
+a = 33
+b = 200
+
+if a > b:
+    pass
+
+# While Loops
