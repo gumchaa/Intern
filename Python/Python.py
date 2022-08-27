@@ -416,3 +416,15 @@ if a > b:
     pass
 
 # While Loops
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+    
+    # Break statement
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
