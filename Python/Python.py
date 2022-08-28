@@ -474,3 +474,19 @@ fruits = ["apple", "banana", "cherry"]
 for x in adj:
     for y in fruits:
         print(x, y)
+        
+for x in [0, 1, 2]:
+    pass
+
+# Functions
+
+def thisFunction():
+    print("\" hello From the other side \"")
+    
+thisFunction()
+
+def thisfunction(fname):
+    print(fname + " Uchiha")
+    
+thisfunction("Sasuke")
+thisfunction("Ithachi")
