@@ -490,3 +490,11 @@ def thisfunction(fname):
     
 thisfunction("Sasuke")
 thisfunction("Ithachi")
+
+    # Arbitary arguments *args
+def thisIsfunction(*ninja):
+    for i in range(0, 4):
+        pass
+        print("The best shinobi is " + ninja[2])
+    
+thisIsfunction("kakashi", "naruto", "guy")
