@@ -491,10 +491,15 @@ def thisfunction(fname):
 thisfunction("Sasuke")
 thisfunction("Ithachi")
 
-    # Arbitary arguments *args
-def thisIsfunction(*ninja):
-    for i in range(0, 4):
-        pass
-        print("The best shinobi is " + ninja[2])
+def thisIsfunction(ninja):
+    for i in range(0, 3):
+        print("the best ninja is " + ninja[i])
     
-thisIsfunction("kakashi", "naruto", "guy")
+ninjas = ["kakashi", "naruto", "guy"]
+thisIsfunction(ninjas)
+
+    # Returning Values
+def multiplesOf5(x):
+    return 5 * x
+
+print(multiplesOf5(10))
